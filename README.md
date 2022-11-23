@@ -36,8 +36,8 @@ a los que siempre se puede acceder por separado. Normalmente pensamos en ellos c
 pero se trata sólo de una convención, reforzada por los buscadores comerciales.
 
 
-----------------------
-Ejecucion
+
+--Ejecucion
 Para la ejecucion del juego sera necesario el uso de Godot 
-----------------------
+
 Grupo de Bautista Cabrera, Ayrton Almiron y Alejo Nardon
