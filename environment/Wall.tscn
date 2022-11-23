@@ -14,7 +14,9 @@ extents = Vector2( 36, 818 )
 [node name="Wall" type="Area2D"]
 
 [node name="Pipe" type="Sprite" parent="."]
-position = Vector2( 0, 240 )
+position = Vector2( 0, 819 )
+rotation = -1.5708
+scale = Vector2( 0.766228, 0.181683 )
 texture = ExtResource( 1 )
 
 [node name="Pipe_2" type="Sprite" parent="."]
@@ -48,5 +50,5 @@ position = Vector2( 0, 240 )
 texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 818 )
+position = Vector2( 0, 819 )
 shape = SubResource( 1 )

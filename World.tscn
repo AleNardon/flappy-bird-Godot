@@ -1,24 +1,27 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://assets/textures/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/background.jpg" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://environment/Ground.tscn" type="PackedScene" id=3]
 [ext_resource path="res://environment/ObstacleSpawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World.gd" type="Script" id=5]
 [ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ui/MenuLayer.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/textures/background_2.png" type="Texture" id=8]
+[ext_resource path="res://assets/textures/ground_1.png" type="Texture" id=8]
 [ext_resource path="res://assets/textures/background_4.png" type="Texture" id=9]
 [ext_resource path="res://assets/textures/background_6.png" type="Texture" id=10]
-[ext_resource path="res://assets/textures/background_7.png" type="Texture" id=11]
-[ext_resource path="res://assets/textures/background_3.png" type="Texture" id=12]
+[ext_resource path="res://assets/textures/ground.jpg" type="Texture" id=11]
+[ext_resource path="res://assets/textures/background_3.jpg" type="Texture" id=12]
 [ext_resource path="res://assets/textures/background_5.png" type="Texture" id=13]
 [ext_resource path="res://assets/textures/ground_3.png" type="Texture" id=14]
-[ext_resource path="res://assets/textures/ground_2.png" type="Texture" id=15]
+[ext_resource path="res://assets/textures/background_2.jpg" type="Texture" id=15]
 [ext_resource path="res://assets/textures/ground_5.png" type="Texture" id=16]
 [ext_resource path="res://assets/textures/ground_4.png" type="Texture" id=17]
 [ext_resource path="res://assets/textures/ground_7.png" type="Texture" id=18]
 [ext_resource path="res://assets/textures/ground_6.png" type="Texture" id=19]
+
+[sub_resource type="StreamTexture" id=8]
+load_path = "res://.import/background_7.png-414080a0204979fc1433c6dd9ae10e1a.stex"
 
 [sub_resource type="Animation" id=1]
 resource_name = "scroll"
@@ -140,37 +143,43 @@ script = ExtResource( 5 )
 [node name="MenuLayer" parent="." instance=ExtResource( 7 )]
 
 [node name="Background" type="Sprite" parent="."]
+scale = Vector2( 1.37644, 1.37644 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="Background_2" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 8 )
+scale = Vector2( 1.45593, 1.88692 )
+texture = ExtResource( 15 )
 centered = false
 
 [node name="Background_3" type="Sprite" parent="."]
 visible = false
+scale = Vector2( 1.39306, 1.39306 )
 texture = ExtResource( 12 )
 centered = false
 
 [node name="Background_4" type="Sprite" parent="."]
 visible = false
+scale = Vector2( 2.01681, 2.42857 )
 texture = ExtResource( 9 )
 centered = false
 
 [node name="Background_5" type="Sprite" parent="."]
 visible = false
+scale = Vector2( 2.46939, 2.64198 )
 texture = ExtResource( 13 )
 centered = false
 
 [node name="Background_6" type="Sprite" parent="."]
 visible = false
+scale = Vector2( 1.2125, 2.17 )
 texture = ExtResource( 10 )
 centered = false
 
 [node name="Background_7" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 11 )
+texture = SubResource( 8 )
 centered = false
 
 [node name="ObstacleSpawner" parent="." instance=ExtResource( 4 )]
@@ -182,6 +191,11 @@ position = Vector2( 115, 427 )
 [node name="Ground" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 686 )
 
+[node name="Sprite" parent="Ground" index="0"]
+position = Vector2( 5, 6 )
+scale = Vector2( 1.175, 0.783333 )
+texture = ExtResource( 11 )
+
 [node name="AnimationPlayer" parent="Ground" index="2"]
 anims/scroll = SubResource( 1 )
 
@@ -190,7 +204,9 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_2" index="0"]
-texture = ExtResource( 15 )
+position = Vector2( -3, 0 )
+scale = Vector2( 2.2827, 1 )
+texture = ExtResource( 8 )
 
 [node name="AnimationPlayer" parent="Ground_2" index="2"]
 anims/scroll = SubResource( 2 )
@@ -200,6 +216,8 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_3" index="0"]
+position = Vector2( 2.00012, 4 )
+scale = Vector2( 2.61592, 2.87507 )
 texture = ExtResource( 14 )
 
 [node name="AnimationPlayer" parent="Ground_3" index="2"]
@@ -210,6 +228,8 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_4" index="0"]
+position = Vector2( -3, -5 )
+scale = Vector2( 2.92204, 2.93103 )
 texture = ExtResource( 17 )
 
 [node name="AnimationPlayer" parent="Ground_4" index="2"]
@@ -220,6 +240,8 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_5" index="0"]
+position = Vector2( 5.00006, -4.99998 )
+scale = Vector2( 3.18499, 1.07051 )
 texture = ExtResource( 16 )
 
 [node name="AnimationPlayer" parent="Ground_5" index="2"]
@@ -230,6 +252,8 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_6" index="0"]
+position = Vector2( -3, 6 )
+scale = Vector2( 2.6775, 1.91111 )
 texture = ExtResource( 19 )
 
 [node name="AnimationPlayer" parent="Ground_6" index="2"]
@@ -240,6 +264,7 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_7" index="0"]
+position = Vector2( 267, 430 )
 texture = ExtResource( 18 )
 
 [node name="AnimationPlayer" parent="Ground_7" index="2"]

@@ -124,10 +124,9 @@ func set_bird(points):
 		$Player/Bird_4.show()
 	elif(points<=25):
 		$Player/Bird_5.show()
-	elif(points<=30):
-		$Player/Bird_6.show()
 	else:
-		$Player/Bird_7.show()
+		$Player/Bird_6.show()
+	
 
 func set_background(points):
 	hideBack()
@@ -141,10 +140,9 @@ func set_background(points):
 		background_4.show()
 	elif(points<=25):
 		background_5.show()
-	elif(points<=30):
-		background_6.show()
 	else:
-		background_7.show()
+		background_6.show()
+
 
 
 
@@ -160,10 +158,8 @@ func set_ground(points):
 		ground_4.show()
 	elif(points<=25):
 		ground_5.show()
-	elif(points<=30):
-		ground_6.show()
 	else:
-		ground_7.show()
+		ground_6.show()
 
 #func set_pipe(points):
 #	hidePipe()
