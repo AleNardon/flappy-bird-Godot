@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/textures/background.png" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,130 @@
 [ext_resource path="res://World.gd" type="Script" id=5]
 [ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ui/MenuLayer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/textures/background_2.png" type="Texture" id=8]
+[ext_resource path="res://assets/textures/background_4.png" type="Texture" id=9]
+[ext_resource path="res://assets/textures/background_6.png" type="Texture" id=10]
+[ext_resource path="res://assets/textures/background_7.png" type="Texture" id=11]
+[ext_resource path="res://assets/textures/background_3.png" type="Texture" id=12]
+[ext_resource path="res://assets/textures/background_5.png" type="Texture" id=13]
+[ext_resource path="res://assets/textures/ground_3.png" type="Texture" id=14]
+[ext_resource path="res://assets/textures/ground_2.png" type="Texture" id=15]
+[ext_resource path="res://assets/textures/ground_5.png" type="Texture" id=16]
+[ext_resource path="res://assets/textures/ground_4.png" type="Texture" id=17]
+[ext_resource path="res://assets/textures/ground_7.png" type="Texture" id=18]
+[ext_resource path="res://assets/textures/ground_6.png" type="Texture" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -216, 0 ) ]
+}
 
 [node name="World" type="Node2D"]
 script = ExtResource( 5 )
@@ -19,16 +143,130 @@ script = ExtResource( 5 )
 texture = ExtResource( 1 )
 centered = false
 
+[node name="Background_2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Background_3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 12 )
+centered = false
+
+[node name="Background_4" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Background_5" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 13 )
+centered = false
+
+[node name="Background_6" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Background_7" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 11 )
+centered = false
+
 [node name="ObstacleSpawner" parent="." instance=ExtResource( 4 )]
 position = Vector2( 800, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 115, 427 )
 
 [node name="Ground" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 686 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 115, 427 )
+[node name="AnimationPlayer" parent="Ground" index="2"]
+anims/scroll = SubResource( 1 )
+
+[node name="Ground_2" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_2" index="0"]
+texture = ExtResource( 15 )
+
+[node name="AnimationPlayer" parent="Ground_2" index="2"]
+anims/scroll = SubResource( 2 )
+
+[node name="Ground_3" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_3" index="0"]
+texture = ExtResource( 14 )
+
+[node name="AnimationPlayer" parent="Ground_3" index="2"]
+anims/scroll = SubResource( 3 )
+
+[node name="Ground_4" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_4" index="0"]
+texture = ExtResource( 17 )
+
+[node name="AnimationPlayer" parent="Ground_4" index="2"]
+anims/scroll = SubResource( 4 )
+
+[node name="Ground_5" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_5" index="0"]
+texture = ExtResource( 16 )
+
+[node name="AnimationPlayer" parent="Ground_5" index="2"]
+anims/scroll = SubResource( 5 )
+
+[node name="Ground_6" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_6" index="0"]
+texture = ExtResource( 19 )
+
+[node name="AnimationPlayer" parent="Ground_6" index="2"]
+anims/scroll = SubResource( 6 )
+
+[node name="Ground_7" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 0, 686 )
+
+[node name="Sprite" parent="Ground_7" index="0"]
+texture = ExtResource( 18 )
+
+[node name="AnimationPlayer" parent="Ground_7" index="2"]
+anims/scroll = SubResource( 7 )
+
 [connection signal="start_game" from="MenuLayer" to="." method="_on_MenuLayer_start_game"]
-[connection signal="body_entered" from="Ground/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="draw" from="Background" to="." method="_on_Background_draw"]
+[connection signal="texture_changed" from="Background" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_2" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_3" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_4" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_5" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_6" to="." method="_on_Background_texture_changed"]
+[connection signal="texture_changed" from="Background_7" to="." method="_on_Background_texture_changed"]
 [connection signal="died" from="Player" to="." method="_on_Player_died"]
+[connection signal="body_entered" from="Ground/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_2/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_3/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_4/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_5/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_6/DeathZone" to="." method="_on_DeathZone_body_entered"]
+[connection signal="body_entered" from="Ground_7/DeathZone" to="." method="_on_DeathZone_body_entered"]
 
 [editable path="Ground"]
+[editable path="Ground_2"]
+[editable path="Ground_3"]
+[editable path="Ground_4"]
+[editable path="Ground_5"]
+[editable path="Ground_6"]
+[editable path="Ground_7"]

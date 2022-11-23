@@ -20,3 +20,6 @@ func _on_ScoreArea_body_exited(body):
 	if body is Player:
 		point.play()
 		emit_signal("score")
+
+
+

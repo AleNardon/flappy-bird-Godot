@@ -1,9 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/textures/bird.png" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=2]
 [ext_resource path="res://assets/audio/wing.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/audio/hit.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/textures/bird_2.png" type="Texture" id=5]
+[ext_resource path="res://assets/textures/bird_4.png" type="Texture" id=6]
+[ext_resource path="res://assets/textures/bird_5.png" type="Texture" id=7]
+[ext_resource path="res://assets/textures/bird_6.png" type="Texture" id=8]
+[ext_resource path="res://assets/textures/bird_7.png" type="Texture" id=9]
+[ext_resource path="res://assets/textures/bird_3.png" type="Texture" id=10]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 20.0
@@ -13,7 +19,7 @@ resource_name = "flap"
 length = 0.3
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Bird:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -25,7 +31,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite:position")
+tracks/1/path = NodePath("Bird:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -41,7 +47,7 @@ tracks/1/keys = {
 resource_name = "idle"
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:position")
+tracks/0/path = NodePath("Bird:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -57,7 +63,7 @@ tracks/0/keys = {
 gravity_scale = 0.0
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Bird" type="Sprite" parent="."]
 position = Vector2( 0, -5 )
 texture = ExtResource( 1 )
 hframes = 3
@@ -75,3 +81,39 @@ stream = ExtResource( 4 )
 
 [node name="Wing" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+
+[node name="Bird_2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 5 )
+hframes = 3
+
+[node name="Bird_3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 10 )
+hframes = 3
+
+[node name="Bird_4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 6 )
+hframes = 3
+
+[node name="Bird_5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 7 )
+hframes = 3
+
+[node name="Bird_6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 8 )
+hframes = 3
+
+[node name="Bird_7" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+texture = ExtResource( 9 )
+hframes = 3
