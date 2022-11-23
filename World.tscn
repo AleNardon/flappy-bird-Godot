@@ -252,8 +252,8 @@ visible = false
 position = Vector2( 0, 686 )
 
 [node name="Sprite" parent="Ground_6" index="0"]
-position = Vector2( -3, 6 )
-scale = Vector2( 2.6775, 1.91111 )
+position = Vector2( 2, -9 )
+scale = Vector2( 2.6775, 2.11111 )
 texture = ExtResource( 19 )
 
 [node name="AnimationPlayer" parent="Ground_6" index="2"]
