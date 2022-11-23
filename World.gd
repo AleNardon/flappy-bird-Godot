@@ -19,13 +19,13 @@ onready var player = $Player
 
 
 #onready var Wall = get_node_and_resource("res://environment/Wall/Pipe")
-onready var Pipe   = get_node_and_resource("res://environment/Wall/Pipe") 
-onready var Pipe_2 = get_node_and_resource("res://environment/Wall/Pipe_2")
-onready var Pipe_3 = get_node_and_resource("res://environment/Wall/Pipe_3")
-onready var Pipe_4 = get_node_and_resource("res://environment/Wall/Pipe_4")
-onready var Pipe_5 = get_node_and_resource("res://environment/Wall/Pipe_5")
-onready var Pipe_6 = get_node_and_resource("res://environment/Wall/Pipe_6")
-onready var Pipe_7 = get_node_and_resource("res://environment/Wall/Pipe_7")
+#onready var Pipe   = get_node_and_resource("res://environment/Wall/Pipe") 
+#onready var Pipe_2 = get_node_and_resource("res://environment/Wall/Pipe_2")
+#onready var Pipe_3 = get_node_and_resource("res://environment/Wall/Pipe_3")
+#onready var Pipe_4 = get_node_and_resource("res://environment/Wall/Pipe_4")
+#onready var Pipe_5 = get_node_and_resource("res://environment/Wall/Pipe_5")
+#onready var Pipe_6 = get_node_and_resource("res://environment/Wall/Pipe_6")
+#onready var Pipe_7 = get_node_and_resource("res://environment/Wall/Pipe_7")
 
 
 onready var hud = $HUD
