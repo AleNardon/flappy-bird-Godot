@@ -51,6 +51,8 @@ func new_game():
 	set_ground(self.score)
 	hideBird()
 	set_bird(self.score)
+	
+	obstacle_spawner.connect("obstacle_created", self, "_on_obstacle_created")
 #	hidePipe()
 #	set_pipe(self.score)
 	
